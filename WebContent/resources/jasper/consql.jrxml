@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="consql" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="89d0d87c-57b9-4250-aa1a-e6b662a20cf2">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from tablas]]>
+	</queryString>
+	<field name="id_tabla" class="java.lang.Integer"/>
+	<field name="des_tabla" class="java.lang.String"/>
+	<field name="cod_tabla" class="java.lang.Integer"/>
+	<field name="rel_tabla" class="java.lang.Integer"/>
+	<field name="sede" class="java.lang.Integer"/>
+	<field name="orden" class="java.lang.Integer"/>
+	<field name="activo_tabla" class="java.lang.Boolean"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="51" y="41" width="100" height="20" uuid="be3f8ab2-feaf-41e5-b076-44be8a00ccb0"/>
+				<text><![CDATA[id_tabla]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="41" width="100" height="20" uuid="860fd5d7-cd71-428f-8c93-478dd6888427"/>
+				<text><![CDATA[des_tabla]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="341" y="41" width="100" height="20" uuid="12370bfc-089d-4f0c-8066-35e13434e05f"/>
+				<text><![CDATA[cod_tabla]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="41" width="100" height="20" uuid="16967bd2-cab8-4f81-9142-0f90db764bfd"/>
+				<text><![CDATA[rel_tabla]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="635" y="41" width="100" height="20" uuid="cb5988cd-13c8-4b6e-9af2-17653e7c32d0"/>
+				<text><![CDATA[sede]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<textField>
+				<reportElement x="51" y="0" width="100" height="20" uuid="8d76ba6a-eeaa-4636-bb16-8ab375284e00"/>
+				<textFieldExpression><![CDATA[$F{id_tabla}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="188" y="0" width="100" height="20" uuid="6cc065df-ea5a-4e19-87ca-018bf42c0223"/>
+				<textFieldExpression><![CDATA[$F{des_tabla}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="341" y="0" width="100" height="20" uuid="308516a6-e27f-4ff6-af35-6d6d63e74347"/>
+				<textFieldExpression><![CDATA[$F{cod_tabla}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="485" y="0" width="100" height="20" uuid="f61f3ca6-5622-4f90-839e-0458fb7e5cf0"/>
+				<textFieldExpression><![CDATA[$F{rel_tabla}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="635" y="0" width="100" height="20" uuid="5d6fde05-9fa6-4d07-aabc-935795b13c8f"/>
+				<textFieldExpression><![CDATA[$F{sede}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
